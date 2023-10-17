@@ -1,0 +1,59 @@
+# matrix
+adddition of two matrix
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no. of row : ");
+		int r=sc.nextInt();
+		System.out.println("Enter no. of column : ");
+		int c=sc.nextInt();
+		int matrix1[][]=new int [r][c];
+		int matrix2[][]=new int [r][c];
+		int sum[][]=new int [r][c];
+		System.out.println("Enter the elements of matrix1 : ");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        matrix1[i][j]=sc.nextInt();
+		    }
+		}
+		System.out.println("Enter the elements of matrix2 : ");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        matrix2[i][j]=sc.nextInt();
+		    }
+		}
+		System.out.println("The sum of matrix : ");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        sum[i][j]=matrix1[i][j]+matrix2[i][j];
+		    }
+		}
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        System.out.print(sum[i][j]+" ");
+		    }
+		}
+		
+	}
+}
+
+output:
+Enter the row : 2
+Enter the column : 2
+Enter the elements of matrix1:
+1 2 3 4
+Enter the elements of matrix2:
+1 2 3 4
+The sum of matrix : 
+2 4 6 8
